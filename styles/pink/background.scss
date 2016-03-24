@@ -1,0 +1,26 @@
+%mdc-background-pink {
+  background: #E91E63;
+  @extend %mdc-text-color-white;
+
+  &.mdc-50,
+  &.mdc-100,
+  &.mdc-200,
+  &.mdc-a100 {
+    @extend %mdc-text-color-black;
+  }
+
+  &.mdc-50 {background: #FCE4EC}
+  &.mdc-100 {background: #F8BBD0}
+  &.mdc-200 {background: #F48FB1}
+  &.mdc-300 {background: #F06292}
+  &.mdc-400 {background: #EC407A}
+  &.mdc-500 {background: #E91E63}
+  &.mdc-600 {background: #D81B60}
+  &.mdc-700 {background: #C2185B}
+  &.mdc-800 {background: #AD1457}
+  &.mdc-900 {background: #880E4F}
+  &.mdc-a100 {background: #FF80AB}
+  &.mdc-a200 {background: #FF4081}
+  &.mdc-a400 {background: #F50057}
+  &.mdc-a700 {background: #C51162}
+}

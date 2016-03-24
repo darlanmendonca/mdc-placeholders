@@ -1,0 +1,31 @@
+{
+  "name": "mdc-placeholders",
+  "version": "0.0.1",
+  "description": "Palette color of Material Design as Sass placeholders",
+  "main": "styles/app.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darlanmendonca/mdc-placeholders.git"
+  },
+  "keywords": [
+    "material design",
+    "material",
+    "design",
+    "palette",
+    "colors",
+    "sass"
+  ],
+  "author": "Darlan Mendonça <darlanmendonca@gmail.com> (https://github.com/darlanmendonca)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/darlanmendonca/mdc-placeholders/issues"
+  },
+  "homepage": "https://github.com/darlanmendonca/mdc-placeholders#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.2.0"
+  }
+}

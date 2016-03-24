@@ -1,0 +1,26 @@
+%mdc-background-indigo {
+  background: #3F51B5;
+  @extend %mdc-text-color-white;
+
+  &.mdc-50,
+  &.mdc-100,
+  &.mdc-200,
+  &.mdc-a100 {
+    @extend %mdc-text-color-black;
+  }
+
+  &.mdc-50 {background: #E8EAF6}
+  &.mdc-100 {background: #C5CAE9}
+  &.mdc-200 {background: #9FA8DA}
+  &.mdc-300 {background: #7986CB}
+  &.mdc-400 {background: #5C6BC0}
+  &.mdc-500 {background: #3F51B5}
+  &.mdc-600 {background: #3949AB}
+  &.mdc-700 {background: #303F9F}
+  &.mdc-800 {background: #283593}
+  &.mdc-900 {background: #1A237E}
+  &.mdc-a100 {background: #8C9EFF}
+  &.mdc-a200 {background: #536DFE}
+  &.mdc-a400 {background: #3D5AFE}
+  &.mdc-a700 {background: #304FFE}
+}
