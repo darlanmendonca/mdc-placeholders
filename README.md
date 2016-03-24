@@ -41,5 +41,6 @@ And to set shades, use:
 
 Has two placeholders to extend, %mdc-background-*, and %mdc-text-color-*, where * is the color.
 
-%mdc-background-* define background color and right text color, in contrast.
-%mdc-text-color-* define text color
+```%mdc-background-*``` define background color and right text color, in contrast.
+
+```%mdc-text-color-*``` define text color
