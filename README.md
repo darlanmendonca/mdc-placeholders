@@ -5,7 +5,7 @@ The advantage of use Sass placeholders, is that you will have all the official p
 
 Use Sass @extend to extend palette colors, and shaders, to background or text color. Examples:
 
-Code below, extend as background color, the palette red, and all shaders, to a class called .mdc-background-primary.
+Code below, extend as background color, the palette blue, and all shaders, to a class called .mdc-background-primary.
 ```sass
 .mdc-background-primary {
   @extend %mdc-background-blue;
