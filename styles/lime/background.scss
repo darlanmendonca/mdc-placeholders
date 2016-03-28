@@ -1,21 +1,9 @@
 %mdc-background-lime {
   background: #CDDC39;
-  @extend %mdc-text-color-white;
+  @extend %mdc-text-color-black;
 
-  &.mdc-50,
-  &.mdc-100,
-  &.mdc-200,
-  &.mdc-300,
-  &.mdc-400,
-  &.mdc-500,
-  &.mdc-600,
-  &.mdc-700,
-  &.mdc-800,
-  &.mdc-a100,
-  &.mdc-a200,
-  &.mdc-a400,
-  &.mdc-a700 {
-    @extend %mdc-text-color-black;
+  &.mdc-900 {
+    @extend %mdc-text-color-white;
   }
 
   &.mdc-50 {background: #F9FBE7}
