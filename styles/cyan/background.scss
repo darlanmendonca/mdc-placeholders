@@ -5,7 +5,14 @@
   &.mdc-50,
   &.mdc-100,
   &.mdc-200,
-  &.mdc-a100 {
+  &.mdc-300,
+  &.mdc-400,
+  &.mdc-500,
+  &.mdc-600,
+  &.mdc-a100,
+  &.mdc-a200,
+  &.mdc-a400,
+  &.mdc-a700 {
     @extend %mdc-text-color-black;
   }
 
