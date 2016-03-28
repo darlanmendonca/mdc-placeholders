@@ -3,6 +3,8 @@
 Offer all palette color of Material Design as Sass placeholders.
 The advantage of use Sass placeholders, is that you will have all the official palette available, but not generating css compiled, only when you use in your Sass code.
 
+<img src="(http://designshack.net/wp-content/uploads/material-color.jpg" width='100%' alt="Preview Material Design Colors">
+
 Use Sass @extend to extend palette colors, and shaders, to background or text color. Examples:
 
 Code below, extend as background color, the palette blue, and all shaders, to a class called .mdc-background-primary.
