@@ -15,5 +15,6 @@
     "colors",
     "sass"
   ],
-  "homepage": "https://github.com/darlanmendonca/mdc-placeholders"
+  "homepage": "https://github.com/darlanmendonca/mdc-placeholders",
+  "ignore": []
 }
