@@ -1,6 +1,13 @@
 %mdc-background-deep-purple {
   background: map-get($mdc-deep-purple, 500);
 
+  &.mdc-50,
+  &.mdc-100,
+  &.mdc-200,
+  &.mdc-a100 {
+    @extend %mdc-text-color-black;
+  }
+
   @each $shade, $color in $mdc-deep-purple {
     &.mdc-#{$shade} {color: $color}
   }
