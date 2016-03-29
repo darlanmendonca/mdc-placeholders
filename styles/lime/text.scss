@@ -1,5 +1,5 @@
 %mdc-text-color-lime {
-  background: map-get($mdc-lime, 500);
+  color: map-get($mdc-lime, 500);
 
   @each $shade, $color in $mdc-lime {
     &.mdc-#{$shade} {color: $color}

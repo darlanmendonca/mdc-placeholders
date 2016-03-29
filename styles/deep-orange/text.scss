@@ -1,5 +1,5 @@
 %mdc-text-color-deep-orange {
-  background: map-get($mdc-deep-orange, 500);
+  color: map-get($mdc-deep-orange, 500);
 
   @each $shade, $color in $mdc-deep-orange {
     &.mdc-#{$shade} {color: $color}
