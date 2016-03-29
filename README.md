@@ -48,4 +48,31 @@ Has two placeholders to extend, %mdc-background-*, and %mdc-text-color-*, where 
 
 ```%mdc-text-color-*``` define text color
 
+You can too use variables directly in your Sass files, the variables that define colors are Sass maps. The name of variables is $mdc-COLOR, and each key has named of shade, i.e. color red:
+
+```sass
+$mdc-red: (
+  50 : #FFEBEE,
+  100: #FFCDD2,
+  200: #EF9A9A,
+  300: #E57373,
+  400: #EF5350,
+  500: #F44336,
+  600: #E53935,
+  700: #D32F2F,
+  800: #C62828,
+  900: #B71C1C,
+  a100: #FF8A80,
+  a200: #FF5252,
+  a400: #FF1744,
+  a700: #D50000
+);
+
+
+// to access in your sass files, use map-get(variable, shade), i.e.
+.border-top {
+  border: 1px solid background: map-get($mdc-red, 500);
+}
+```
+
 See all [Material Design palette collor](https://www.google.com/design/spec/style/color.html#color-color-palette)

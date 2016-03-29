@@ -1,19 +1,8 @@
 %mdc-background-amber {
-  background: #FFC107;
+  background: map-get($mdc-amber, 500);
   @extend %mdc-text-color-black;
 
-  &.mdc-50 {background: #FFF8E1}
-  &.mdc-100 {background: #FFECB3}
-  &.mdc-200 {background: #FFE082}
-  &.mdc-300 {background: #FFD54F}
-  &.mdc-400 {background: #FFCA28}
-  &.mdc-500 {background: #FFC107}
-  &.mdc-600 {background: #FFB300}
-  &.mdc-700 {background: #FFA000}
-  &.mdc-800 {background: #FF8F00}
-  &.mdc-900 {background: #FF6F00}
-  &.mdc-a100 {background: #FFE57F}
-  &.mdc-a200 {background: #FFD740}
-  &.mdc-a400 {background: #FFC400}
-  &.mdc-a700 {background: #FFAB00}
+  @each $shade, $color in $mdc-amber {
+    &.mdc-#{$shade} {background: $color}
+  }
 }

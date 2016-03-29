@@ -1,5 +1,5 @@
 %mdc-background-cyan {
-  background: #00BCD4;
+  background: map-get($mdc-cyan, 500);
   @extend %mdc-text-color-black;
 
   &.mdc-700,
@@ -8,18 +8,7 @@
     @extend %mdc-text-color-white;
   }
 
-  &.mdc-50 {background: #E0F7FA}
-  &.mdc-100 {background: #B2EBF2}
-  &.mdc-200 {background: #80DEEA}
-  &.mdc-300 {background: #4DD0E1}
-  &.mdc-400 {background: #26C6DA}
-  &.mdc-500 {background: #00BCD4}
-  &.mdc-600 {background: #00ACC1}
-  &.mdc-700 {background: #0097A7}
-  &.mdc-800 {background: #00838F}
-  &.mdc-900 {background: #006064}
-  &.mdc-a100 {background: #84FFFF}
-  &.mdc-a200 {background: #18FFFF}
-  &.mdc-a400 {background: #00E5FF}
-  &.mdc-a700 {background: #00B8D4}
+  @each $shade, $color in $mdc-cyan {
+    &.mdc-#{$shade} {background: $color}
+  }
 }

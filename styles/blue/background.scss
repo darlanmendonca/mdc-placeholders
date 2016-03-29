@@ -1,5 +1,5 @@
 %mdc-background-blue {
-  background: #2196F3;
+  background: map-get($mdc-blue, 500);
 
   &.mdc-50,
   &.mdc-100,
@@ -10,18 +10,7 @@
     @extend %mdc-text-color-black;
   }
 
-  &.mdc-50 {background: #E3F2FD}
-  &.mdc-100 {background: #BBDEFB}
-  &.mdc-200 {background: #90CAF9}
-  &.mdc-300 {background: #64B5F6}
-  &.mdc-400 {background: #42A5F5}
-  &.mdc-500 {background: #2196F3}
-  &.mdc-600 {background: #1E88E5}
-  &.mdc-700 {background: #1976D2}
-  &.mdc-800 {background: #1565C0}
-  &.mdc-900 {background: #0D47A1}
-  &.mdc-a100 {background: #82B1FF}
-  &.mdc-a200 {background: #448AFF}
-  &.mdc-a400 {background: #2979FF}
-  &.mdc-a700 {background: #2962FF}
+  @each $shade, $color in $mdc-blue {
+    &.mdc-#{$shade} {background: $color}
+  }
 }

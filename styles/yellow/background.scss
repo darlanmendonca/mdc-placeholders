@@ -1,19 +1,8 @@
 %mdc-background-yellow {
-  background: #FFEB3B;
+  background: map-get($mdc-yellow, 500);
   @extend %mdc-text-color-black;
 
-  &.mdc-50 {background: #FFFDE7}
-  &.mdc-100 {background: #FFF9C4}
-  &.mdc-200 {background: #FFF59D}
-  &.mdc-300 {background: #FFF176}
-  &.mdc-400 {background: #FFEE58}
-  &.mdc-500 {background: #FFEB3B}
-  &.mdc-600 {background: #FDD835}
-  &.mdc-700 {background: #FBC02D}
-  &.mdc-800 {background: #F9A825}
-  &.mdc-900 {background: #F57F17}
-  &.mdc-a100 {background: #FFFF8D}
-  &.mdc-a200 {background: #FFFF00}
-  &.mdc-a400 {background: #FFEA00}
-  &.mdc-a700 {background: #FFD600}
+  @each $shade, $color in $mdc-yellow {
+    &.mdc-#{$shade} {background: $color}
+  }
 }

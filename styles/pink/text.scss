@@ -1,18 +1,7 @@
 %mdc-text-color-pink {
-  color: #E91E63;
+  background: map-get($mdc-pink, 500);
 
-  &.mdc-50 {color: #FCE4EC}
-  &.mdc-100 {color: #F8BBD0}
-  &.mdc-200 {color: #F48FB1}
-  &.mdc-300 {color: #F06292}
-  &.mdc-400 {color: #EC407A}
-  &.mdc-500 {color: #E91E63}
-  &.mdc-600 {color: #D81B60}
-  &.mdc-700 {color: #C2185B}
-  &.mdc-800 {color: #AD1457}
-  &.mdc-900 {color: #880E4F}
-  &.mdc-a100 {color: #FF80AB}
-  &.mdc-a200 {color: #FF4081}
-  &.mdc-a400 {color: #F50057}
-  &.mdc-a700 {color: #C51162}
+  @each $shade, $color in $mdc-pink {
+    &.mdc-#{$shade} {color: $color}
+  }
 }

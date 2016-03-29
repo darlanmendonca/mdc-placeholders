@@ -1,6 +1,6 @@
 {
   "name": "mdc-placeholders",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "Palette color of Material Design as Sass placeholders",
   "main": "styles/app.scss",
   "scripts": {

@@ -1,18 +1,7 @@
 %mdc-text-color-light-blue {
-  color: #03A9F4;
+  background: map-get($mdc-light-blue, 500);
 
-  &.mdc-50 {color: #E1F5FE}
-  &.mdc-100 {color: #B3E5FC}
-  &.mdc-200 {color: #81D4FA}
-  &.mdc-300 {color: #4FC3F7}
-  &.mdc-400 {color: #29B6F6}
-  &.mdc-500 {color: #03A9F4}
-  &.mdc-600 {color: #039BE5}
-  &.mdc-700 {color: #0288D1}
-  &.mdc-800 {color: #0277BD}
-  &.mdc-900 {color: #01579B}
-  &.mdc-a100 {color: #80D8FF}
-  &.mdc-a200 {color: #40C4FF}
-  &.mdc-a400 {color: #00B0FF}
-  &.mdc-a700 {color: #0091EA}
+  @each $shade, $color in $mdc-light-blue {
+    &.mdc-#{$shade} {color: $color}
+  }
 }

@@ -1,5 +1,5 @@
 %mdc-background-light-green {
-  background: #8BC34A;
+  background: map-get($mdc-light-green, 500);
   @extend %mdc-text-color-black;
 
   &.mdc-700,
@@ -8,18 +8,7 @@
     @extend %mdc-text-color-white;
   }
 
-  &.mdc-50 {background: #F1F8E9}
-  &.mdc-100 {background: #DCEDC8}
-  &.mdc-200 {background: #C5E1A5}
-  &.mdc-300 {background: #AED581}
-  &.mdc-400 {background: #9CCC65}
-  &.mdc-500 {background: #8BC34A}
-  &.mdc-600 {background: #7CB342}
-  &.mdc-700 {background: #689F38}
-  &.mdc-800 {background: #558B2F}
-  &.mdc-900 {background: #33691E}
-  &.mdc-a100 {background: #CCFF90}
-  &.mdc-a200 {background: #B2FF59}
-  &.mdc-a400 {background: #76FF03}
-  &.mdc-a700 {background: #64DD17}
+  @each $shade, $color in $mdc-light-green {
+    &.mdc-#{$shade} {background: $color}
+  }
 }

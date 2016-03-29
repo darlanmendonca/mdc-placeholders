@@ -1,5 +1,5 @@
 %mdc-background-orange {
-  background: #FF9800;
+  background: map-get($mdc-orange, 500);
   @extend %mdc-text-color-black;
 
   &.mdc-800,
@@ -7,18 +7,7 @@
     @extend %mdc-text-color-white;
   }
 
-  &.mdc-50 {background: #FFF3E0}
-  &.mdc-100 {background: #FFE0B2}
-  &.mdc-200 {background: #FFCC80}
-  &.mdc-300 {background: #FFB74D}
-  &.mdc-400 {background: #FFA726}
-  &.mdc-500 {background: #FF9800}
-  &.mdc-600 {background: #FB8C00}
-  &.mdc-700 {background: #F57C00}
-  &.mdc-800 {background: #EF6C00}
-  &.mdc-900 {background: #E65100}
-  &.mdc-a100 {background: #FFD180}
-  &.mdc-a200 {background: #FFAB40}
-  &.mdc-a400 {background: #FF9100}
-  &.mdc-a700 {background: #FF6D00}
+  @each $shade, $color in $mdc-orange {
+    &.mdc-#{$shade} {background: $color}
+  }
 }

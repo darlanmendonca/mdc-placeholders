@@ -1,25 +1,7 @@
 %mdc-background-deep-purple {
-  background: #673AB7;
+  background: map-get($mdc-deep-purple, 500);
 
-  &.mdc-50,
-  &.mdc-100,
-  &.mdc-200,
-  &.mdc-a100 {
-    @extend %mdc-text-color-black;
+  @each $shade, $color in $mdc-deep-purple {
+    &.mdc-#{$shade} {color: $color}
   }
-
-  &.mdc-50 {background: #EDE7F6}
-  &.mdc-100 {background: #D1C4E9}
-  &.mdc-200 {background: #B39DDB}
-  &.mdc-300 {background: #9575CD}
-  &.mdc-400 {background: #7E57C2}
-  &.mdc-500 {background: #673AB7}
-  &.mdc-600 {background: #5E35B1}
-  &.mdc-700 {background: #512DA8}
-  &.mdc-800 {background: #4527A0}
-  &.mdc-900 {background: #311B92}
-  &.mdc-a100 {background: #B388FF}
-  &.mdc-a200 {background: #7C4DFF}
-  &.mdc-a400 {background: #651FFF}
-  &.mdc-a700 {background: #6200EA}
 }

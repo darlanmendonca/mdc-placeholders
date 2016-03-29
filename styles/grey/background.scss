@@ -1,5 +1,5 @@
 %mdc-background-grey {
-  background: #9E9E9E;
+  background: map-get($mdc-grey, 500);
   @extend %mdc-text-color-black;
 
   &.mdc-600,
@@ -9,14 +9,7 @@
     @extend %mdc-text-color-white;
   }
 
-  &.mdc-50 {background: #FAFAFA}
-  &.mdc-100 {background: #F5F5F5}
-  &.mdc-200 {background: #EEEEEE}
-  &.mdc-300 {background: #E0E0E0}
-  &.mdc-400 {background: #BDBDBD}
-  &.mdc-500 {background: #9E9E9E}
-  &.mdc-600 {background: #757575}
-  &.mdc-700 {background: #616161}
-  &.mdc-800 {background: #424242}
-  &.mdc-900 {background: #212121}
+  @each $shade, $color in $mdc-grey {
+    &.mdc-#{$shade} {background: $color}
+  }
 }
