@@ -3,5 +3,5 @@
 
   @each $shade, $color in $mdc-deep-purple {
     &.mdc-#{$shade} {color: $color}
-
+  }
 }
