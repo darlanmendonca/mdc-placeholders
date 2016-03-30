@@ -71,7 +71,7 @@ $mdc-red: (
 
 // to access in your sass files, use map-get(variable, shade), i.e.
 .border-top {
-  border: 1px solid background: map-get($mdc-red, 500);
+  border: 1px solid map-get($mdc-red, 500);
 }
 ```
 
